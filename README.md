@@ -22,6 +22,8 @@ O sistema simula uma loja virtual farmacêutica, permitindo navegação por cate
 ---
 
 ## 📁 Estrutura do Projeto
+
+```bash
 📦 farmacia-santo-remedio-frontend
 ├── 📁 public          # Arquivos estáticos públicos (favicon, ícones)
 ├── 📁 src             # Código-fonte principal da aplicação
@@ -39,6 +41,8 @@ O sistema simula uma loja virtual farmacêutica, permitindo navegação por cate
 ├── tsconfig.json      # Configurações do compilador TypeScript
 ├── vite.config.ts     # Configurações do bundler Vite
 └── eslint.config.js   # Regras de padronização e linting de código
+
+````
 
 --- 
 
@@ -96,7 +100,9 @@ Sistema de login e autenticação
 Busca de produtos
 Deploy online
 
-👩‍💻 Desenvolvido por
+---
+
+###👩‍💻 Desenvolvido por
 
 Débora Campos
 
