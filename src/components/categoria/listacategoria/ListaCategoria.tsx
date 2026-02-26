@@ -1,9 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import type Categoria from "../../../models/Categoria";
 import { buscar } from "../../../services/Service";
 import CardCategoria from "../cardcategoria/CardCategoria";
 import { SyncLoader } from "react-spinners";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function ListaCategorias() {
     const [categorias, setCategorias] = useState<Categoria[]>([]);
@@ -13,7 +15,7 @@ function ListaCategorias() {
         try {
             await buscar('/categorias', setCategorias);
         } catch (error: any) {
-            console.error("Erro ao listar as categorias:", error);
+            ToastAlerta('Erro ao listar as categorias.', 'error')
         } finally {
             setIsLoading(false);
         }

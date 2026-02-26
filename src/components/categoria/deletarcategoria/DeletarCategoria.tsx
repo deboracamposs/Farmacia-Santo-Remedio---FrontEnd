@@ -6,6 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { buscar, deletar } from "../../../services/Service";
 import type Categoria from "../../../models/Categoria";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function DeletarCategoria() {
 
@@ -36,11 +37,11 @@ function DeletarCategoria() {
 
         try {
             await deletar(`/categorias/${id}`)
-            alert('Categoria apagada com sucesso.')
+            ToastAlerta('A categoria foi deletada com sucesso!', 'success')
         } catch (error: any) {
             if (error.toString().includes('401')) {
             } else {
-                alert('Erro ao deletar categoria.')
+                ToastAlerta('Erro ao deletar categoria.', 'error')
             }
         }    
 

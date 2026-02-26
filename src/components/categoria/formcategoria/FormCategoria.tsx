@@ -5,6 +5,7 @@ import { atualizar, buscar, cadastrar } from "../../../services/Service";
 import { useNavigate, useParams } from "react-router-dom";
 import type Categoria from "../../../models/Categoria";
 import { ClipLoader } from "react-spinners";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function FormCategoria () {
     const navigate = useNavigate();
@@ -52,21 +53,21 @@ async function gerarNovaCategoria (e: FormEvent<HTMLFormElement>) {
     if (id !== undefined) {
         try {
             await atualizar(`/categorias`, categoria, setCategoria)
-            alert('A categoria foi atualizada com sucesso!')
+            ToastAlerta('A categoria foi atualizada com sucesso!', 'success')
         } catch (error: any) {
             if (error.toString().includes('401')) {
             } else {
-                alert('Erro ao atualizar categoria.')
+                ToastAlerta('Erro ao atualizar categoria.', 'error')
             }
         }
         } else {
             try {
                 await cadastrar('/categorias', categoria, setCategoria)
-                alert('A categoria foi cadastrada com sucesso!')
+                ToastAlerta('A categoria foi cadastrada com sucesso!', 'success')
             } catch (error: any) {
                 if (error.toString().includes('401')) {
                 } else {
-                    alert('Erro ao cadastrar categoria.')
+                    ToastAlerta('Erro ao cadastrar categoria.', 'error')
                 }
             }
         }
