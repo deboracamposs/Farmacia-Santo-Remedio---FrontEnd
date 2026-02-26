@@ -1,73 +1,140 @@
-# React + TypeScript + Vite
+# 🏥 Farmácia Santo Remédio — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web de uma farmácia online desenvolvida com **React + TypeScript**, durante o bootcamp da Generation Brasil.  
+O sistema simula uma loja virtual farmacêutica, permitindo navegação por categorias e interação com a interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demonstração
 
-## React Compiler
+👉 Projeto frontend desenvolvido para consumo de API backend e simulação de e-commerce farmacêutico.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ React
+- 🔷 TypeScript
+- ⚡ Vite
+- 🎨 CSS
+- 🧹 ESLint
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📁 Estrutura do Projeto
+📦 Farmacia-Santo-Remedio---FrontEnd
+├── 📁 public
+│ └── arquivos estáticos públicos
+│ (favicon, imagens fixas, manifestos)
+│
+├── 📁 src
+│ ├── 📁 assets
+│ │ → imagens e arquivos estáticos usados na interface
+│ │
+│ ├── 📁 components
+│ │ → componentes reutilizáveis da interface
+│ │ (botões, navbar, cards, etc.)
+│ │
+│ ├── 📁 pages
+│ │ → páginas principais do sistema
+│ │ (home, produtos, login, etc.)
+│ │
+│ ├── 📁 services
+│ │ → configuração e consumo de API
+│ │ (requisições HTTP e integrações)
+│ │
+│ ├── 📁 styles
+│ │ → arquivos de estilização global ou modular
+│ │
+│ ├── App.tsx
+│ │ → componente raiz da aplicação
+│ │
+│ └── main.tsx
+│ → ponto de entrada do React
+│
+├── index.html
+│ → arquivo base HTML
+│
+├── package.json
+│ → dependências e scripts do projeto
+│
+├── tsconfig.json
+│ → configuração do TypeScript
+│
+├── vite.config.ts
+│ → configuração do Vite
+│
+├── eslint.config.js
+│ → regras de padronização do código
+│
+└── .gitignore
+→ arquivos ignorados pelo Git 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚙️ Como Executar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ✅ Pré-requisitos
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Node.js instalado
+- npm ou yarn
+
+### ▶️ Passo a passo
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/deboracamposs/Farmacia-Santo-Remedio---FrontEnd.git
+
+Acesse a pasta:
+
+cd Farmacia-Santo-Remedio---FrontEnd
+
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+
+Abra no navegador:
+
+http://localhost:5173
+
+---
+
+### 🛒 Funcionalidades
+
+✅ Interface de farmácia virtual
+✅ Navegação entre páginas
+✅ Componentes reutilizáveis
+✅ Estrutura pronta para integração com API
+✅ Layout moderno e responsivo
+
+---
+
+### 🎯 Objetivo do Projeto
+
+Este projeto foi desenvolvido para praticar:
+construção de interfaces modernas
+componentização com React
+organização de projetos frontend
+consumo de APIs
+tipagem com TypeScript
+
+---
+
+### 🔮 Melhorias Futuras
+
+Integração completa com backend
+Carrinho de compras funcional
+Sistema de login e autenticação
+Busca de produtos
+Deploy online
+
+👩‍💻 Desenvolvido por
+
+Débora Campos
+
+💼 Projeto educacional e de portfólio.
