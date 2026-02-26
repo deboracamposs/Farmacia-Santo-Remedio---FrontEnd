@@ -106,7 +106,7 @@ Este projeto foi desenvolvido como parte de um estudo intensivo para consolidar 
 
 **Débora Campos** *Desenvolvedora Fullstack em constante evolução.*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-perfil-aqui)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/debora-campos-/)
 
 ---
 > 💼 *Este é um projeto com fins educacionais e de composição de portfólio profissional.*
