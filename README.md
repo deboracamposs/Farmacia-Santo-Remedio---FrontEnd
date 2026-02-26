@@ -73,37 +73,40 @@ http://localhost:5173
 
 ### 🛒 Funcionalidades
 
-✅ Interface de farmácia virtual
-✅ Navegação entre páginas
-✅ Componentes reutilizáveis
-✅ Estrutura pronta para integração com API
-✅ Layout moderno e responsivo
+* **Interface de Farmácia Virtual:** Layout intuitivo e focado na experiência do usuário.
+* **Navegação Dinâmica:** Sistema de rotas eficiente para transição entre páginas.
+* **Componentização Avançada:** Arquitetura baseada em componentes reutilizáveis e escaláveis.
+* **Integração com API:** Estrutura robusta configurada para consumo de serviços externos via Axios.
+* **Layout Moderno e Responsivo:** Interface adaptável para diferentes tamanhos de tela (Mobile e Desktop).
 
 ---
 
 ### 🎯 Objetivo do Projeto
 
-Este projeto foi desenvolvido para praticar:
-construção de interfaces modernas
-componentização com React
-organização de projetos frontend
-consumo de APIs
-tipagem com TypeScript
+Este projeto foi desenvolvido como parte de um estudo intensivo para consolidar conhecimentos em:
+* **Desenvolvimento Frontend:** Construção de interfaces modernas e performáticas.
+* **Ecossistema React:** Aplicação de Hooks, Componentização e Gerenciamento de Estado.
+* **Arquitetura de Software:** Organização profissional de pastas e fluxos de trabalho.
+* **Typescript:** Implementação de tipagem estática para garantir a segurança e manutenção do código.
+* **Consumo de APIs:** Prática real de integração entre o Front-end e serviços de Backend.
 
 ---
 
-### 🔮 Melhorias Futuras
+### 🔮 Próximos Passos (Backlog)
 
-Integração completa com backend
-Carrinho de compras funcional
-Sistema de login e autenticação
-Busca de produtos
-Deploy online
+- [ ] **Persistência de Dados:** Integração completa com os endpoints do Backend.
+- [ ] **E-commerce Core:** Implementação de um carrinho de compras funcional.
+- [ ] **Segurança:** Sistema de Login e Autenticação de usuários.
+- [ ] **UX Search:** Barra de busca avançada para filtragem de produtos.
+- [ ] **Produção:** Deploy automatizado em ambiente de nuvem.
 
 ---
 
-###👩‍💻 Desenvolvido por
+### 👩‍💻 Desenvolvedora
 
-Débora Campos
+**Débora Campos** *Desenvolvedora Fullstack em constante evolução.*
 
-💼 Projeto educacional e de portfólio.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seu-perfil-aqui)
+
+---
+> 💼 *Este é um projeto com fins educacionais e de composição de portfólio profissional.*
