@@ -22,62 +22,25 @@ O sistema simula uma loja virtual farmacêutica, permitindo navegação por cate
 ---
 
 ## 📁 Estrutura do Projeto
-📦 Farmacia-Santo-Remedio---FrontEnd
-├── 📁 public
-│ └── arquivos estáticos públicos
-│ (favicon, imagens fixas, manifestos)
-│
-├── 📁 src
-│ ├── 📁 assets
-│ │ → imagens e arquivos estáticos usados na interface
-│ │
-│ ├── 📁 components
-│ │ → componentes reutilizáveis da interface
-│ │ (botões, navbar, cards, etc.)
-│ │
-│ ├── 📁 pages
-│ │ → páginas principais do sistema
-│ │ (home, produtos, login, etc.)
-│ │
-│ ├── 📁 services
-│ │ → configuração e consumo de API
-│ │ (requisições HTTP e integrações)
-│ │
-│ ├── 📁 styles
-│ │ → arquivos de estilização global ou modular
-│ │
-│ ├── App.tsx
-│ │ → componente raiz da aplicação
-│ │
-│ └── main.tsx
-│ → ponto de entrada do React
-│
-├── index.html
-│ → arquivo base HTML
-│
-├── package.json
-│ → dependências e scripts do projeto
-│
-├── tsconfig.json
-│ → configuração do TypeScript
-│
-├── vite.config.ts
-│ → configuração do Vite
-│
-├── eslint.config.js
-│ → regras de padronização do código
-│
-└── .gitignore
-→ arquivos ignorados pelo Git 
+📦 farmacia-santo-remedio-frontend
+├── 📁 public          # Arquivos estáticos públicos (favicon, ícones)
+├── 📁 src             # Código-fonte principal da aplicação
+│   ├── 📁 assets      # Imagens e mídias utilizadas na interface
+│   ├── 📁 components  # Componentes reutilizáveis (Navbar, Footer, Cards)
+│   ├── 📁 models      # Definições de interfaces TypeScript (Categoria, Produto)
+│   ├── 📁 pages       # Páginas principais (Home, Listas, Formulários)
+│   ├── 📁 services    # Configuração de API e requisições Axios
+│   ├── 📁 styles      # Estilização global e arquivos CSS/Tailwind
+│   ├── App.tsx        # Componente raiz e gerenciamento de Rotas
+│   └── main.tsx       # Ponto de entrada do React no DOM
+├── .gitignore         # Arquivos ignorados pelo Git (node_modules, .env)
+├── index.html         # Arquivo HTML base da aplicação
+├── package.json       # Scripts e gerenciamento de dependências
+├── tsconfig.json      # Configurações do compilador TypeScript
+├── vite.config.ts     # Configurações do bundler Vite
+└── eslint.config.js   # Regras de padronização e linting de código
 
----
-
-## ⚙️ Como Executar o Projeto
-
-### ✅ Pré-requisitos
-
-- Node.js instalado
-- npm ou yarn
+--- 
 
 ### ▶️ Passo a passo
 
@@ -101,7 +64,7 @@ npm run dev
 Abra no navegador:
 
 http://localhost:5173
-
+````
 ---
 
 ### 🛒 Funcionalidades
