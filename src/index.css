@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+:root {
+  --swiper-navigation-color: #1e3a8a; /* Azul da sua marca */
+  --swiper-pagination-color: #1e3a8a;
+}
+
